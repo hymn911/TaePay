@@ -1,6 +1,8 @@
 
 
-
+html{
+    font-size:30px;
+}
 #loader{
 	position: fixed;
 	width: 100%;
@@ -28,10 +30,9 @@
 #xx{
     position: absolute;
     margin: auto;
-    top: 25% ;
+    top: 34% ;
     left: 50% ;
     transform: translate(-50%, -50%);
-    font-size: 5vw;
     color: white;
     text-align: center;
     animation: glow 1s ease-in-out infinite alternate;
@@ -45,13 +46,27 @@
           text-shadow: 0 0 20px #fff, 0 0 30px #4FC2C1, 0 0 40px #4FC2C1, 0 0 50px #4FC2C1, 0 0 60px #4FC2C1, 0 0 70px #4FC2C1, 0 0 80px #4FC2C1;
         }
       }
+      @media screen and (min-width: 601px) {
+        div.xx {
+          font-size: 3vw;
+        }
+      }
+      
+      @media screen and (max-width: 600px) {
+        div.xx {
+          font-size: 5.8vw;
+        }
+      }
+    
+
+
 #xxx{
     position: absolute;
     margin: auto;
-    top: 35%;
+    top: 52%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3.2vw;
+    
     color: white;
 }
 #xxxx{
@@ -138,13 +153,23 @@ section{
     animation: glow 1s ease-in-out infinite alternate;
     position: absolute;
     margin: auto;
-    top: 53%;
+    top: 78%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 5.8vw;
     color: white;
   }
+  @media screen and (min-width: 601px) {
+    div.glow {
+      font-size: 3vw;
+      
+    }
+  }
   
+  @media screen and (max-width: 600px) {
+    div.glow {
+      font-size: 7vw;
+    }
+  }
   @keyframes glow {
     from {
       text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #4FC2C1, 0 0 40px #4FC2C1, 0 0 50px #4FC2C1, 0 0 60px #4FC2C1, 0 0 70px #4FC2C1;
@@ -175,3 +200,19 @@ section{
     font-size: 3vw;
     color: white;
 }
+div.example {
+    background-color: lightgrey;
+    padding: 20px;
+  }
+  
+  @media screen and (min-width: 601px) {
+    div.example {
+      font-size: 3vw;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    div.example {
+      font-size: 20px;
+    }
+  }
